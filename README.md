@@ -17,7 +17,7 @@ The model architecture codes;
 Dataset, training and test codes;
 
 * [Extract Patch and Data Augmentation](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/preparation_dataset.py)
-* [Train, Test, Visualization (merge)](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/train_test_visualize.py)
+* [Train, Test, Visualization (merge images and compare prediction with test images)](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/train_test_visualize.py)
 
 
 ## Citation Request
