@@ -1,3 +1,8 @@
+'''
+
+    @author: mehmetkaanerol
+
+'''
 import tensorflow as tf
 from keras.layers import concatenate, Conv2D, MaxPooling2D, Conv2DTranspose
 from keras.layers import UpSampling2D, Dropout, Softmax, BatchNormalization, Activation
