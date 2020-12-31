@@ -1,1 +1,34 @@
-# UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation
+# U-Net USquarred-Net MultiRes U-Net for Retinal Vessel Segmentation
+
+
+
+
+
+
+
+## Codes
+
+The model architecture codes;
+
+* [U-Net Model](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/models/unet.py)
+* [USquared-Net Model](https://github.com/nibtehaz/MultiResUNet/blob/master/MultiResUNet.py)
+* [MultiRes U-Net Model](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/models/unet.py)
+
+Dataset, training and test codes;
+
+* [Extract Patch and Data Augmentation](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/preparation_dataset.py)
+* [Train, Test, Visualization (merge)](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/train_test_visualize.py)
+
+
+## Citation Request
+
+If you have benefited from this project, please cite the following paper.
+
+```
+@article{
+
+  Soon
+
+}
+
+```
