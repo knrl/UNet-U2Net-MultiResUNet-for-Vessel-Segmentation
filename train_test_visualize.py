@@ -1,6 +1,6 @@
 '''
 
-@author: mehmetkaanerol
+    @author: mehmetkaanerol
 
 '''
 import random
