@@ -1,4 +1,4 @@
-<center> # U-Net U^2-Net MultiRes U-Net for Retinal Vessel Segmentation </center>
+<h1 align="center">  U-Net U^2-Net MultiRes U-Net for Retinal Vessel Segmentation  </h1>
 
 
 
