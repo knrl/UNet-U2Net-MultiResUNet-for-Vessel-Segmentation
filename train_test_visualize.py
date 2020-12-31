@@ -1,3 +1,8 @@
+'''
+
+@author: mehmetkaanerol
+
+'''
 import random
 import pickle
 import numpy as np
