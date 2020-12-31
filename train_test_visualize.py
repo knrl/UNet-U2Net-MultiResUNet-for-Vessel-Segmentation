@@ -89,6 +89,7 @@ print(precision, " ", recall, " ", f1_score, " ", AUC_ROC, " ", spe, " ", sen)
 
 
 # Visualize test results
+# merge the images
 fig, axs = plt.subplots(nrows=5, ncols=3, figsize=(15, 30), subplot_kw={'xticks': [], 'yticks': []})
 
 i, k, j, d = 0, 0, 0, 0
