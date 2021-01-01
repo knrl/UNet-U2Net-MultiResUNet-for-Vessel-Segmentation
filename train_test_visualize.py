@@ -110,16 +110,57 @@ for ax in axs.flat:
     if (i % 4 == 0):
         a += 1
     if (i % 4 == 0):
-        ax.imshow(preds_test[a].reshape(128,128), cmap='gray')
+        ax.imshow(preds_test[a].reshape(W,H), cmap='gray')
         ax.set_title(str(a) + " prediction")
     elif (i % 4 == 1):
-        ax.imshow(Y_test[a].reshape(128,128),cmap='gray')
+        ax.imshow(Y_test[a].reshape(W,H),cmap='gray')
         ax.set_title(str(a) + " ground truth")
     elif (i % 4 == 2):
-        ax.imshow(X_test[a].reshape(128,128),cmap='gray')
+        ax.imshow(X_test[a].reshape(W,H),cmap='gray')
         ax.set_title(str(a) + " image")
     else:
         de = visualize_only_FOV(preds_test_t[a], Y_test_t[a], X_test[a])
         ax.imshow(de, cmap='gray')
         ax.set_title(str(a) + " image")
+    i += 1
+    
+def visualize_vessel(pred, y_test, x_test):
+    temp = np.zeros((W, H))
+    for i in range(W):
+        for k in range(H):
+            if (y_test[i][k] == 1):
+                if (pred[i][k] == 0):
+                    temp[i][k] = 255
+                else:
+                    temp[i][k] = x_test[i][k]
+            else:
+                temp[i][k] = x_test[i][k]
+    return temp
+
+x, y = 512, 512
+
+a, j = 0, 0
+full_images = np.zeros((4, x, y))
+for a in range(4):
+    j = 0
+    for i in range(x//W):
+        for k in range(y//H):
+            if (a == 0):
+                full_images[a, i*W:i*W+W, k*H:k*H+H] = X_test[j].reshape(W,H)
+            elif (a == 1):
+                full_images[a, i*W:i*W+W, k*H:k*H+H] = Y_test[j].reshape(W,H)
+            elif (a == 2):
+                full_images[a, i*W:i*W+W, k*H:k*H+H] = preds_test_t[j].reshape(W,H)
+            else:
+                de = visualize_only_FOV(preds_test_t[j], Y_test_t[j], X_test[j])
+                full_images[a, i*W:i*W+W, k*H:k*H+H] = de
+            j += 1
+        
+
+fig, axs = plt.subplots(nrows=1, ncols=4, figsize=(20, 30), subplot_kw={'xticks': [], 'yticks': []})
+
+i = 0
+for ax in axs.flat:
+    ax.imshow(full_images[i].reshape(x,y), cmap='gray')
+    ax.set_title(str(i) + " prediction")
     i += 1
