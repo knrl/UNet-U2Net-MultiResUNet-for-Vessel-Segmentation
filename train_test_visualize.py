@@ -139,6 +139,7 @@ def visualize_vessel(pred, y_test, x_test):
 
 x, y = 512, 512
 
+# Merge the pathces
 a, j = 0, 0
 full_images = np.zeros((4, x, y))
 for a in range(4):
