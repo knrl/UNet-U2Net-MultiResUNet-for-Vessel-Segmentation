@@ -11,8 +11,8 @@
 The model architecture codes;
 
 * [U-Net Model](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/models/unet.py)
-* [USquared-Net Model](https://github.com/nibtehaz/MultiResUNet/blob/master/MultiResUNet.py)
-* [MultiRes U-Net Model](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Retinal-Vessel-Segmentation/blob/main/models/unet.py)
+* [USquared-Net Model](https://github.com/knrl/UNet-USquarredNet-MultiResUNet-for-Vessel-Segmentation/blob/main/models/usquarednet.py)
+* [MultiRes U-Net Model](https://github.com/nibtehaz/MultiResUNet/blob/master/MultiResUNet.py)
 
 Dataset, training and test codes;
 
