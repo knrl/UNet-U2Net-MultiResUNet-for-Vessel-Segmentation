@@ -1,7 +1,7 @@
 <h1 align="center">  U-Net U^2-Net MultiRes U-Net for Retinal Vessel Segmentation  </h1>
 
 <p align="center">
-  <img width="400"  src="results/stare_u2_100 copy 2.png">
+  <img height="400"  src="results/patch_predictions1.jpg">
 </p>
 
 ## Codes
