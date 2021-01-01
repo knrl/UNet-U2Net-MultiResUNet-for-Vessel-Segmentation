@@ -88,22 +88,38 @@ spe = TN / (TN + FP)
 print(precision, " ", recall, " ", f1_score, " ", AUC_ROC, " ", spe, " ", sen)
 
 
-# Visualize test results
-# merge the images
-fig, axs = plt.subplots(nrows=5, ncols=3, figsize=(15, 30), subplot_kw={'xticks': [], 'yticks': []})
+def visualize_vessel(pred, y_test, x_test):
+    temp = np.zeros((128, 128))
+    for i in range(128):
+        for k in range(128):
+            if (y_test[i][k] == 1):
+                if (pred[i][k] == 0):
+                    temp[i][k] = 255
+                else:
+                    temp[i][k] = x_test[i][k]
+            else:
+                temp[i][k] = x_test[i][k]
+    return temp
 
-i, k, j, d = 0, 0, 0, 0
+# Visualize test results
+# compare images
+fig, axs = plt.subplots(nrows=5, ncols=4, figsize=(20, 30), subplot_kw={'xticks': [], 'yticks': []})
+
+a = -1
 for ax in axs.flat:
-    if (i % 3 == 0):
-        ax.imshow(preds_test[j].reshape(W, H), cmap='gray')
-        ax.set_title(str(j) + " prediction")
-        j += 1
-    elif (i % 3 == 1):
-        ax.imshow(Y_test[k].reshape(W, H),cmap='gray')
-        ax.set_title(str(k) + " ground truth")
-        k += 1
+    if (i % 4 == 0):
+        a += 1
+    if (i % 4 == 0):
+        ax.imshow(preds_test[a].reshape(128,128), cmap='gray')
+        ax.set_title(str(a) + " prediction")
+    elif (i % 4 == 1):
+        ax.imshow(Y_test[a].reshape(128,128),cmap='gray')
+        ax.set_title(str(a) + " ground truth")
+    elif (i % 4 == 2):
+        ax.imshow(X_test[a].reshape(128,128),cmap='gray')
+        ax.set_title(str(a) + " image")
     else:
-        ax.imshow(X_test[d].reshape(W, H),cmap='gray')
-        ax.set_title(str(d) + " image")
-        d += 1
+        de = visualize_only_FOV(preds_test_t[a], Y_test_t[a], X_test[a])
+        ax.imshow(de, cmap='gray')
+        ax.set_title(str(a) + " image")
     i += 1
