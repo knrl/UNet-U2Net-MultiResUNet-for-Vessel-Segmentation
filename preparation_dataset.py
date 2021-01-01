@@ -53,8 +53,7 @@ def train_and_mask_dataset(TRAIN_PATH, MASK_TRAIN_PATH, IMG_HEIGHT, IMG_WIDTH, T
     
     n,j = 0,0
     num_of_filters = 6
-    # Eger .Ds_store formatında dosya varsa number_of_file her .ds_ dosyası için -1 azaltılmalıdır.
-    num_of_image = len(t1_list) - 1
+    num_of_image = len(t1_list)
     h = int(IMG_HEIGHT/TARGET_H)
     w = int(IMG_WIDTH/TARGET_W)
     X_train = np.zeros((h*w*num_of_filters*num_of_image,TARGET_H,TARGET_W,1), dtype=np.uint8)
