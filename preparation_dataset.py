@@ -20,7 +20,7 @@ def transform_data(image, mask, IMG_HEIGHT, IMG_WIDTH):
     transformed_image = np.zeros((6, IMG_HEIGHT, IMG_WIDTH, 1), dtype=np.uint8)
     transformed_mask = np.zeros((6, IMG_HEIGHT, IMG_WIDTH, 1), dtype=np.bool)
     
-    transform1 = A.Compose([A.RandomCrop(width=IMG_WIDTH-384, height=IMG_HEIGHT-384)])
+    transform1 = A.Compose([A.RandomCrop(width=IMG_WIDTH-128, height=IMG_HEIGHT-128)])
     transform2 = A.Compose([A.HorizontalFlip(p=1)])
     transform3 = A.Compose([A.CLAHE()])
     transform4 = A.Compose([A.RandomRotate90(p=1)])
