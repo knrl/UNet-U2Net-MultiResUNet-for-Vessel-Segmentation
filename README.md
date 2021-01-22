@@ -91,7 +91,7 @@ In biomedical image segmentation such as retinal vessel segmentation, pixel-base
   
   
 <h4>References</h4>
-<p>
+<p style="font-size:8px">
 [1] Ibtehaz, N., Rahman, M. S. “MultiResUNet: Rethinking the U-Net architecture for multimodal biomedical image
 segmentation,” Neural Networks, vol. 121, pp. 74-87, 2020.<br>
 [2] Hajnal, J. V., Hill, D. L. (Eds.). “Medical image registratio,” CRC press, 2001.<br>
