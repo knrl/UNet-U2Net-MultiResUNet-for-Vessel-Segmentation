@@ -52,7 +52,7 @@ Each data set was divided into parts in proportion to its resolution. The DRIVE 
 
 <p align="center">
   <img height="250"  src="results/preprocess.png">
-  <p align="center">Figure 1. (a) Original image; (b) Green channel; (c) CLAHE; (d) Gamma enhancement</p>
+  <p align="center">Figure 1. (a) Original image; (b) Green channel; (c) CLAHE; (d) Gamma correction</p>
 </p>
 
 <p>
@@ -88,6 +88,20 @@ The data set is divided into 70% training and 30% testing. During the training, 
 In biomedical image segmentation such as retinal vessel segmentation, pixel-based comparison is important for equally evaluating thick and thin vessels. It is important to preserve the spatial information in the image during feature extraction. U-Net is successful in this sense thanks to the skip connections between the encoder and decoder layers. In addition to these features of U-Net, U2-Net better captures local and holistic information of both shallow and deep layers, regardless of resolutions [3]. From the results we obtained, it has been shown that the pre-processing stage and the part size are as important as the model used for retinal vessel segmentation. In retinal vessel segmentation, it can be difficult to understand the success of micro vessel segmentation from quantitative metrics, as a large part of the image contains thick veins and black background (Figure 3).
 </p>
   
+<p align="center">
+  <img height="200"  src="results/results.png">
+  <p align="center">Comparison of U-Net and U2-Net models for 128x128 patch size and CLAHE, gamma correction DRIVE, STARE, HRF datasets</p>
+</p>
+
+<p align="center">
+  <img height="200"  src="results/results2.png">
+  <p align="center">Comparison of U-Net and U2-Net models for 64x64 patch size and CLAHE, gamma correction DRIVE, STARE datasets</p>
+</p>
+
+<p align="center">
+  <img height="900"  src="results/results3.png">
+  <p align="center">STARE data set; (a) U-Net 128x128 green channel and normalization; (b) U-Net 128x128 CLAHE and Gamma correction; (c) U-Net 64x64 CLAHE and Gamma correction; (d) U2-Net 128x128 green channel and normalization; (e) U2-Net 128x128 CLAHE and Gamma correction; (f) U2-Net 64x64 CLAHE and Gamma correction</p>
+</p>
   
   
 <h4>References</h4>
