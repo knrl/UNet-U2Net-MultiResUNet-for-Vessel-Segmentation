@@ -93,23 +93,23 @@ In biomedical image segmentation such as retinal vessel segmentation, pixel-base
 <h4>References</h4>
 <p>
 [1] Ibtehaz, N., Rahman, M. S. “MultiResUNet: Rethinking the U-Net architecture for multimodal biomedical image
-segmentation,” Neural Networks, vol. 121, pp. 74-87, 2020.
-[2] Hajnal, J. V., Hill, D. L. (Eds.). “Medical image registratio,” CRC press, 2001.
+segmentation,” Neural Networks, vol. 121, pp. 74-87, 2020.<br>
+[2] Hajnal, J. V., Hill, D. L. (Eds.). “Medical image registratio,” CRC press, 2001.<br>
 [3] Qin, X., Zhang, Z., Huang, C., Dehghan, M., Zaiane, O. R., Jagersand, M. “U2-Net: Going deeper with nested U-structure for
-salient object detection,” Pattern Recognition, vol. 106, 2020.
+salient object detection,” Pattern Recognition, vol. 106, 2020.<br>
 [4] Staal, J., Abràmoff, M. D., Niemeijer, M., Viergever, M. A., Van Ginneken, B. “Ridge-based vessel segmentation in color
-images of the retina,” IEEE transactions on medical imaging, vol. 23, no. 4, pp. 501-509, 2004).
+images of the retina,” IEEE transactions on medical imaging, vol. 23, no. 4, pp. 501-509, 2004).<br>
 [5] Hoover, A. D., Kouznetsova, V., Goldbaum, M. “Locating blood vessels in retinal images by piecewise threshold probing of a
-matched filter response,” IEEE Transactions on Medical imaging, vol. 19, no. 3, pp. 203-210, 2000.
+matched filter response,” IEEE Transactions on Medical imaging, vol. 19, no. 3, pp. 203-210, 2000.<br>
 [6] Budai, A., Bock, R., Maier, A., Hornegger, J., Michelson, G. “Robust vessel segmentation in fundus images,” International
-journal of biomedical imaging, 2013.
+journal of biomedical imaging, 2013.<br>
 [7] Ricci, E., Perfetti, R. “Retinal blood vessel segmentation using line operators and support vector classification,” IEEE
-transactions on medical imaging, vol. 26, no. 10, pp. 1357-1365, 2007.
+transactions on medical imaging, vol. 26, no. 10, pp. 1357-1365, 2007.<br>
 [8] Jin, Q., Meng, Z., Pham, T. D., Chen, Q., Wei, L., Su, R. “DUNet: A deformable network for retinal vessel
-segmentation,” Knowledge-Based Systems, vol. 178, pp. 149-162, 2019.
+segmentation,” Knowledge-Based Systems, vol. 178, pp. 149-162, 2019.<br>
 [9] Moccia, S., De Momi, E., El Hadji, S., Mattos, L. S. “Blood vessel segmentation algorithms—review of methods, datasets and
-evaluation metrics,” Computer methods and programs in biomedicine, vol. 158, pp. 71-91, 2018.
+evaluation metrics,” Computer methods and programs in biomedicine, vol. 158, pp. 71-91, 2018.<br>
 [10] Son, J., Park, S. J., Jung, K. H. “Retinal vessel segmentation in fundoscopic images with generative adversarial
-networks,” 2017.
+networks,” 2017.<br>
   </p>
 
