@@ -52,7 +52,7 @@ Each data set was divided into parts in proportion to its resolution. The DRIVE 
 
 <p align="center">
   <img height="250"  src="results/preprocess.png">
-  <p align="center"><i>Figure 1. (a) Original image; (b) Green channel; (c) CLAHE; (d) Gamma correction<7i></p>
+  <p align="center"><i>Figure 1. (a) Original image; (b) Green channel; (c) CLAHE; (d) Gamma correction</i></p>
 </p>
 
 <p>
