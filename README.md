@@ -46,7 +46,7 @@ In this study, scimage, sci-kit learn, OpenCV, albumentations libraries are used
 </p>
 
 <p>
-  <i>a. Data Pre-Processing</i>
+  <i>a. Data Pre-Processing</i><br>
 Each data set was divided into parts in proportion to its resolution. The DRIVE 565 × 584 has been scaled from STARE 700 × 605 to 512x512. DRIVE and STARE data sets are chosen into two different patch sizes, 128x128 and 64x64. The resolution of the HRF data set is higher than the other data sets. The HRF was scaled from 3504x2336 to 3456x2304 and patch size 128x128.
 </p>
 
@@ -56,7 +56,7 @@ Each data set was divided into parts in proportion to its resolution. The DRIVE 
 </p>
 
 <p>
-  <i>b. Vessel Enhancement</i>
+  <i>b. Vessel Enhancement</i><br>
 In retinal images, the green channel exhibits the best vessel and background contrast, while the red and blue ones tend to be very noisy [7]. The first preprocessing approach used in the study is to take the green channel from each visual and normalize it. The normalized visuals obtained from the green channel were enhancement by applying gamma correction after CLAHE (Figure 1) [8].
 </p>
 
@@ -67,13 +67,13 @@ In retinal images, the green channel exhibits the best vessel and background con
 </p>
 
 <p>
-    <i>c. Evaluation and Metric Selection</i>
+    <i>c. Evaluation and Metric Selection</i><br>
 The 5 most frequently used metrics for retinal vessel segmentation in the literature were used [9]. These; accuracy, sensitivity, specifity, precision, ppv, f1-score. In the evaluation phase, only the fovea area was calculated. Since the STARE data set does not contain a mask image, mask images produced for the STARE data set were used in another study [10]. In order to make observational comparison, the tagged visuals are overlaid with the prediction images and each pixel is marked with white for erroneous predictions. A threshold value of 0.5 was applied for the predicted pixels.
 </p>
 
 
 <p>
-      <i>d. Application details</i>
+      <i>d. Application details</i><br>
 The data set is divided into 70% training and 30% testing. During the training, the validation set was chosen as 1% each time. For both models, Adam optimizer and binary cross entropy loss function, learning ratio 0.001 are used. Training 20, 50, 100, 200, 500, 1000 epochs have been tried. In general, after 50 epochs in data sets, the difference between loss and assessment loss ratio started to increase. The epoch results of 50 to 70 were evaluated to obtain the best values.
 </p>
 
@@ -94,12 +94,12 @@ In biomedical image segmentation such as retinal vessel segmentation, pixel-base
 </p>
 
 <p align="center">
-  <img height="200"  src="results/results2.png">
+  <img height="150"  src="results/results2.png">
   <p align="center">Comparison of U-Net and U2-Net models for 64x64 patch size and CLAHE, gamma correction DRIVE, STARE datasets</p>
 </p>
 
 <p align="center">
-  <img height="900"  src="results/results3.png">
+  <img height="800"  src="results/results3.png">
   <p align="center">STARE data set; (a) U-Net 128x128 green channel and normalization; (b) U-Net 128x128 CLAHE and Gamma correction; (c) U-Net 64x64 CLAHE and Gamma correction; (d) U2-Net 128x128 green channel and normalization; (e) U2-Net 128x128 CLAHE and Gamma correction; (f) U2-Net 64x64 CLAHE and Gamma correction</p>
 </p>
   
