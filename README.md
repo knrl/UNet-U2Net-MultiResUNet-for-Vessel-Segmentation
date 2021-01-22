@@ -73,7 +73,7 @@ The 5 most frequently used metrics for retinal vessel segmentation in the litera
 
 
 <p>
-      <i>d. Application details</i><br>
+      <i>d. Experiment details</i><br>
 The data set is divided into 70% training and 30% testing. During the training, the validation set was chosen as 1% each time. For both models, Adam optimizer and binary cross entropy loss function, learning ratio 0.001 are used. Training 20, 50, 100, 200, 500, 1000 epochs have been tried. In general, after 50 epochs in data sets, the difference between loss and assessment loss ratio started to increase. The epoch results of 50 to 70 were evaluated to obtain the best values.
 </p>
 
@@ -90,12 +90,12 @@ In biomedical image segmentation such as retinal vessel segmentation, pixel-base
   
 <p align="center">
   <img height="200"  src="results/results.png">
-  <p align="center">Comparison of U-Net and U2-Net models for 128x128 patch size and CLAHE, gamma correction DRIVE, STARE, HRF datasets</p>
+  <p align="center">128x128 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</p>
 </p>
 
 <p align="center">
   <img height="150"  src="results/results2.png">
-  <p align="center">Comparison of U-Net and U2-Net models for 64x64 patch size and CLAHE, gamma correction DRIVE, STARE datasets</p>
+  <p align="center">64x64 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</p>
 </p>
 
 <p align="center">
