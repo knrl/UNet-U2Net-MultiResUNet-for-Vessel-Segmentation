@@ -89,23 +89,26 @@ In biomedical image segmentation such as retinal vessel segmentation, pixel-base
 </p>
   
 <p align="center">
-  <img height="200"  src="results/results.png">
+
   <p align="center"><i>Table 1. 128x128 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i></p>
+    <img height="200"  src="results/results.png">
 </p>
 
 <p align="center">
-  <img height="150"  src="results/results2.png">
+
   <p align="center"><i>Table 2. 64x64 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i></p>
+    <img height="150"  src="results/results2.png">
 </p>
 
 <p align="center">
-  <img height="800"  src="results/results3.png">
+<br>
   <p align="center"><i>STARE data set; (a) U-Net 128x128 green channel and normalization; (b) U-Net 128x128 CLAHE and Gamma correction; (c) U-Net 64x64 CLAHE and Gamma correction; (d) U2-Net 128x128 green channel and normalization; (e) U2-Net 128x128 CLAHE and Gamma correction; (f) U2-Net 64x64 CLAHE and Gamma correction</i></p>
+    <img height="800"  src="results/results3.png">
 </p>
   
   
 <h4>References</h4>
-<p style="font-size:8px">
+<p>
 [1] Ibtehaz, N., Rahman, M. S. “MultiResUNet: Rethinking the U-Net architecture for multimodal biomedical image
 segmentation,” Neural Networks, vol. 121, pp. 74-87, 2020.<br>
 [2] Hajnal, J. V., Hill, D. L. (Eds.). “Medical image registratio,” CRC press, 2001.<br>
