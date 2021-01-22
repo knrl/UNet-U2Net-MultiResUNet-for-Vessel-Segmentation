@@ -90,12 +90,12 @@ In biomedical image segmentation such as retinal vessel segmentation, pixel-base
   
 <p align="center">
   <img height="200"  src="results/results.png">
-  <p align="center">128x128 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</p>
+  <i align="center">Table 1. 128x128 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i>
 </p>
 
 <p align="center">
   <img height="150"  src="results/results2.png">
-  <p align="center">64x64 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</p>
+  <i align="center">Table 2. 64x64 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i>
 </p>
 
 <p align="center">
