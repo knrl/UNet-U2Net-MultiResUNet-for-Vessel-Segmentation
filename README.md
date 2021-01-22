@@ -52,7 +52,7 @@ Each data set was divided into parts in proportion to its resolution. The DRIVE 
 
 <p align="center">
   <img height="250"  src="results/preprocess.png">
-  <p align="center">Figure 1. (a) Original image; (b) Green channel; (c) CLAHE; (d) Gamma correction</p>
+  <p align="center"><i>Figure 1. (a) Original image; (b) Green channel; (c) CLAHE; (d) Gamma correction<7i></p>
 </p>
 
 <p>
@@ -63,7 +63,7 @@ In retinal images, the green channel exhibits the best vessel and background con
 
 <p align="center">
   <img height="250"  src="results/augmentation.png">
-  <p align="center">Figure 2. Data Augmentation; (a) Original image; (b) Random cropping; (c) Horizontal flipping; (d) CLAHE filter; (e) Vertical flip; (f) Random rotation</p>
+  <p align="center"><i>Figure 2. Data Augmentation; (a) Original image; (b) Random cropping; (c) Horizontal flipping; (d) CLAHE filter; (e) Vertical flip; (f) Random rotation</i></p>
 </p>
 
 <p>
@@ -80,7 +80,7 @@ The data set is divided into 70% training and 30% testing. During the training, 
 
 <p align="center">
   <img height="350"  src="results/result1.png">
-  <p align="center">Figure 3. Original, prediction, ground truth and overlap images</p>
+  <p align="center"><i>Figure 3. Original, prediction, ground truth and overlap images</i></p>
 </p>
 
 <h4>Conclusion and Discussion</h4>
@@ -90,17 +90,17 @@ In biomedical image segmentation such as retinal vessel segmentation, pixel-base
   
 <p align="center">
   <img height="200"  src="results/results.png">
-  <i align="center">Table 1. 128x128 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i>
+  <p align="center"><i>Table 1. 128x128 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i></p>
 </p>
 
 <p align="center">
   <img height="150"  src="results/results2.png">
-  <i align="center">Table 2. 64x64 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i>
+  <p align="center"><i>Table 2. 64x64 patch size and CLAHE, gamma correction; Accuracy, PPV, Recall, Specifity, F1-Score</i></p>
 </p>
 
 <p align="center">
   <img height="800"  src="results/results3.png">
-  <p align="center">STARE data set; (a) U-Net 128x128 green channel and normalization; (b) U-Net 128x128 CLAHE and Gamma correction; (c) U-Net 64x64 CLAHE and Gamma correction; (d) U2-Net 128x128 green channel and normalization; (e) U2-Net 128x128 CLAHE and Gamma correction; (f) U2-Net 64x64 CLAHE and Gamma correction</p>
+  <p align="center"><i>STARE data set; (a) U-Net 128x128 green channel and normalization; (b) U-Net 128x128 CLAHE and Gamma correction; (c) U-Net 64x64 CLAHE and Gamma correction; (d) U2-Net 128x128 green channel and normalization; (e) U2-Net 128x128 CLAHE and Gamma correction; (f) U2-Net 64x64 CLAHE and Gamma correction</i></p>
 </p>
   
   
