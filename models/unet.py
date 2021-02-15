@@ -10,7 +10,7 @@ from keras.layers import concatenate, Conv2D, MaxPooling2D, Conv2DTranspose
 from keras.layers import Dropout, Activation
 
 def conv2d_act(x, size, filters=(3,3), padding='same', activation='relu', kernel_initializer='he_normal'):
-    x = Conv2D(size, filters, padding=padding, dilation_rate=dilation_rate, kernel_initializer=kernel_initializer)(x)
+    x = Conv2D(size, filters, padding=padding, kernel_initializer=kernel_initializer)(x)
     x = Activation(activation)(x)
     return x
 
