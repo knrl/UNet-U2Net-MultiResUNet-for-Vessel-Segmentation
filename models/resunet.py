@@ -18,16 +18,13 @@ def conv2d_bn(x, filters, num_row, num_col, padding='same', strides=(1, 1), acti
         return x
 
     x = Activation(activation, name=name)(x)
-
     return x
 
 
 def trans_conv2d_bn(x, filters, num_row, num_col, padding='same', strides=(2, 2), name=None):
     x = Conv2DTranspose(filters, (num_row, num_col), strides=strides, padding=padding)(x)
     x = BatchNormalization(axis=3, scale=False)(x)
-    
     return x
-
 
 def MultiResBlock(U, inp, alpha = 1.67):
     W = alpha * U
@@ -43,14 +40,12 @@ def MultiResBlock(U, inp, alpha = 1.67):
     out = add([shortcut, out])
     out = Activation('relu')(out)
     out = BatchNormalization(axis=3)(out)
-
     return out
 
 
 def ResPath(filters, length, inp):
     shortcut = inp
-    shortcut = conv2d_bn(shortcut, filters, 1, 1,
-                         activation=None, padding='same')
+    shortcut = conv2d_bn(shortcut, filters, 1, 1, activation=None, padding='same')
 
     out = conv2d_bn(inp, filters, 3, 3, activation='relu', padding='same')
     out = add([shortcut, out])
@@ -59,14 +54,11 @@ def ResPath(filters, length, inp):
 
     for i in range(length-1):
         shortcut = out
-        shortcut = conv2d_bn(shortcut, filters, 1, 1,
-                             activation=None, padding='same')
-
+        shortcut = conv2d_bn(shortcut, filters, 1, 1, activation=None, padding='same')
         out = conv2d_bn(out, filters, 3, 3, activation='relu', padding='same')
         out = add([shortcut, out])
         out = Activation('relu')(out)
         out = BatchNormalization(axis=3)(out)
-
     return out
 
 
